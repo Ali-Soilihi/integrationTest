@@ -36,8 +36,8 @@ jobs:
 workflows:
   say-hello-workflow:
     jobs:
-      - say-hello
-      - say-hello-chou
-      filters:
-          branches:
-              only: /^feature-*/
+      - say-hello:
+      - say-hello-chou:
+            filters:
+              branches:
+                only: /^feature-.*/
