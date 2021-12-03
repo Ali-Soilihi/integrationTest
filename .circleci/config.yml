@@ -40,4 +40,4 @@ workflows:
       - say-hello-chou
         filters:
             branches:
-                only: /feature-.*/
+                only: /^feature-.*/
